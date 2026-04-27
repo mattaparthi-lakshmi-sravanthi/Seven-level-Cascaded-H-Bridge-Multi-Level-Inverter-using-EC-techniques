@@ -10,6 +10,25 @@ The system is modeled and simulated in **MATLAB/Simulink**, and performance is e
 
 ---
 
+
+## 🧪 Hardware Implementation
+
+<p align="center">
+  <img src="images/Lab_setup.png" alt="Lab Setup" width="600"/>
+</p>
+
+<p align="center">
+  <em>Experimental setup of the 7-level Cascaded H-Bridge Multilevel Inverter</em>
+</p>
+
+---
+
+## ⚖️ Limitations
+- SHE alone cannot minimize total THD  
+- THD minimization does not eliminate specific harmonics  
+- Nonlinear equations are complex and computationally intensive  
+
+---
 ## 🎯 Objectives
 - Design a 7-level CHB multilevel inverter  
 - Eliminate lower-order harmonics using SHE  
@@ -92,24 +111,6 @@ To solve nonlinear transcendental equations for switching angles:
 
 ---
 
-## 🧪 Hardware Implementation
-
-<p align="center">
-  <img src="images/Lab_setup.png" alt="Lab Setup" width="600"/>
-</p>
-
-<p align="center">
-  <em>Experimental setup of the 7-level Cascaded H-Bridge Multilevel Inverter</em>
-</p>
-
----
-
-## ⚖️ Limitations
-- SHE alone cannot minimize total THD  
-- THD minimization does not eliminate specific harmonics  
-- Nonlinear equations are complex and computationally intensive  
-
----
 
 ## 🚀 Conclusion
 The project demonstrates that combining **Selective Harmonic Elimination (SHE)** with **THD minimization** provides superior performance compared to using either technique alone. The integration of optimization algorithms enables efficient determination of switching angles, resulting in improved waveform quality and reduced harmonic distortion.
