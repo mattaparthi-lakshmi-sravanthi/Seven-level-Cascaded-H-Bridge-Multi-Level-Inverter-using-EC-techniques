@@ -1,9 +1,6 @@
 # Seven-level-Cascaded-H-Bridge-Multi-Level-Inverter-using-EC-techniques
 # ⚡ Harmonic Reduction in Multilevel Inverters using SHE & Optimization Techniques
 
-# ⚡ 7-Level Cascaded H-Bridge Multilevel Inverter  
-### Harmonic Reduction using SHE & Optimization Techniques
-
 ---
 
 ## 🔍 Overview
