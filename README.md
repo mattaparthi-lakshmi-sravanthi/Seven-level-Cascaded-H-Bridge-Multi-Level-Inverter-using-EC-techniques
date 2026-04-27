@@ -92,8 +92,15 @@ To solve nonlinear transcendental equations for switching angles:
 
 ---
 
-## 📷 Simulation Results
-*(Add your waveform images / FFT results here)*
+## 🧪 Hardware Implementation
+
+<p align="center">
+  <img src="images/Lab_setup.png" alt="Lab Setup" width="600"/>
+</p>
+
+<p align="center">
+  <em>Experimental setup of the 7-level Cascaded H-Bridge Multilevel Inverter</em>
+</p>
 
 ---
 
