@@ -1,93 +1,132 @@
 # Seven-level-Cascaded-H-Bridge-Multi-Level-Inverter-using-EC-techniques
 # ⚡ Harmonic Reduction in Multilevel Inverters using SHE & Optimization Techniques
 
+# ⚡ 7-Level Cascaded H-Bridge Multilevel Inverter  
+### Harmonic Reduction using SHE & Optimization Techniques
+
+---
+
 ## 🔍 Overview
-This project focuses on reducing harmonic distortion in a 7-level Cascaded H-Bridge (CHB) multilevel inverter using Selective Harmonic Elimination (SHE) and Total Harmonic Distortion (THD) minimization techniques. Advanced optimization algorithms such as Particle Swarm Optimization (PSO), Artificial Bee Colony (ABC), and Differential Evolution (DE) are used to determine optimal switching angles.
+This project focuses on the design and analysis of a **7-level Cascaded H-Bridge (CHB) Multilevel Inverter** with the objective of reducing harmonic distortion in output waveforms. The work combines **Selective Harmonic Elimination (SHE)** and **Total Harmonic Distortion (THD) minimization** techniques, enhanced using advanced optimization algorithms such as **Particle Swarm Optimization (PSO)**, **Artificial Bee Colony (ABC)**, and **Differential Evolution (DE)**.
+
+The system is modeled and simulated in **MATLAB/Simulink**, and performance is evaluated through FFT-based harmonic analysis.
 
 ---
 
-## 💡 Key Highlights
-- ⚡ Designed a **7-level Cascaded H-Bridge Multilevel Inverter**
-- 📉 Reduced harmonic distortion using:
-  - Selective Harmonic Elimination (SHE)
-  - THD Minimization
-- 🧠 Applied **optimization algorithms**:
-  - Particle Swarm Optimization (PSO)
-  - Artificial Bee Colony (ABC)
-  - Differential Evolution (DE)
-- 📊 Performed FFT analysis to evaluate harmonic performance
-- 🔄 Combined SHE + THD for improved efficiency and waveform quality
+## 🎯 Objectives
+- Design a 7-level CHB multilevel inverter  
+- Eliminate lower-order harmonics using SHE  
+- Minimize overall THD in output voltage and current  
+- Apply optimization algorithms to solve nonlinear switching equations  
+- Analyze system performance under varying modulation indices  
 
 ---
 
-## 🧠 Problem Statement
-Traditional SHE eliminates specific harmonics but does not minimize overall THD.  
-THD minimization reduces distortion but cannot eliminate targeted harmonics.  
-This project combines both approaches to achieve optimal performance.
+## ⚡ Multilevel Inverter Overview
+Multilevel inverters convert DC to AC using multiple voltage levels, improving waveform quality and reducing harmonic distortion. Among various topologies, the **Cascaded H-Bridge (CHB)** inverter is preferred due to:
+- Reduced component count  
+- Modular structure  
+- Absence of clamping diodes and balancing capacitors  
 
 ---
 
-## ⚙️ Methodology
-1. Designed 7-level CHB inverter model in MATLAB/Simulink  
-2. Derived nonlinear equations for switching angles  
-3. Applied optimization algorithms to solve transcendental equations  
-4. Evaluated performance using FFT analysis  
-5. Compared results across different modulation indices  
+## 🧠 Methodology
 
----
+### 1. System Design
+- Developed a **7-level CHB inverter model**
+- Each phase consists of cascaded H-bridge cells
+- Switching devices calculated as:
+  - Switches = (m − 1) × 2 = 12  
+  - DC sources = (m − 1) / 2 = 3  
 
-## 🛠️ Tools & Technologies
-- MATLAB  
-- Simulink  
-- Power Electronics Concepts  
-- Optimization Algorithms (PSO, ABC, DE)
+### 2. Harmonic Reduction Techniques
+- **Selective Harmonic Elimination (SHE):**
+  - Eliminates specific lower-order harmonics (e.g., 3rd, 5th)
+- **THD Minimization:**
+  - Reduces total harmonic distortion across waveform  
+
+### 3. Optimization Techniques
+To solve nonlinear transcendental equations for switching angles:
+- Particle Swarm Optimization (PSO)  
+- Artificial Bee Colony (ABC)  
+- Differential Evolution (DE)  
+
+### 4. Simulation & Analysis
+- Modeled using MATLAB/Simulink  
+- FFT analysis performed on:
+  - Pole voltage  
+  - Line voltage  
+  - Output current  
 
 ---
 
 ## 📊 Key Results
-- THD significantly reduced in output waveform  
-- Improved elimination of lower-order harmonics  
-- Better performance achieved by combining SHE + THD  
-- DE algorithm showed higher accuracy and robustness  
+- Pole Voltage THD ≈ **31.68%**  
+- Line Voltage THD ≈ **14.46%**  
+- Improved harmonic performance using combined SHE + THD approach  
+- DE algorithm showed better accuracy and convergence  
 
 ---
 
-## 📈 Analysis
-- Pole Voltage THD: ~31.68%  
-- Line Voltage THD: ~14.46%  
-- Performance varies with modulation index (MI = 0.57, 0.8)
+## 📈 Performance Analysis
+- THD varies with modulation index (MI = 0.57, 0.8)  
+- At lower MI, some voltage levels are not visible due to switching angle limits  
+- Combined SHE + THD provides:
+  - Better harmonic elimination  
+  - Reduced need for external filters  
 
 ---
 
-## ⚡ Core Concepts Used
+## 🛠️ Tools & Technologies
+- **MATLAB**
+- **Simulink**
+- Power Electronics Design
+- Optimization Algorithms (PSO, ABC, DE)
+- FFT Analysis
+
+---
+
+## 🔬 Core Concepts
 - Multilevel Inverters  
 - Cascaded H-Bridge Topology  
-- Fourier Analysis  
+- Fourier Series Analysis  
 - Harmonic Elimination  
 - Optimization Techniques  
 
 ---
 
-## 🚀 Why This Project Stands Out
-- Combines **power electronics + optimization + simulation**
-- Solves a **real industrial problem (harmonic distortion)**
-- Demonstrates **strong analytical + mathematical skills**
-- Uses **advanced algorithms (AI-inspired techniques)**
+## 📷 Simulation Results
+*(Add your waveform images / FFT results here)*
 
 ---
 
-## 📷 Results & Waveforms
-(Add your simulation screenshots here)
+## ⚖️ Limitations
+- SHE alone cannot minimize total THD  
+- THD minimization does not eliminate specific harmonics  
+- Nonlinear equations are complex and computationally intensive  
+
+---
+
+## 🚀 Conclusion
+The project demonstrates that combining **Selective Harmonic Elimination (SHE)** with **THD minimization** provides superior performance compared to using either technique alone. The integration of optimization algorithms enables efficient determination of switching angles, resulting in improved waveform quality and reduced harmonic distortion.
 
 ---
 
 ## 🔮 Future Scope
 - Hardware implementation of CHB inverter  
-- Real-time DSP/FPGA-based control  
-- AI-based adaptive harmonic control  
+- Real-time control using DSP/FPGA  
+- AI-based adaptive harmonic optimization  
+- Integration with renewable energy systems  
 
 ---
 
 ## 📚 References
-- IEEE papers on Multilevel Inverters  
-- SHE & THD optimization research papers  
+- J. Rodriguez et al., *Multilevel Inverters: A Survey of Topologies*  
+- IEEE papers on SHE and THD optimization  
+- Research on PSO, ABC, and DE algorithms  
+
+---
+
+## 👤 Author
+**M. Lakshmi Sravanthi**  
+Electrical & Electronics Engineering  
